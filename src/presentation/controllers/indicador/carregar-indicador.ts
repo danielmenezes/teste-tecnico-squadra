@@ -1,6 +1,5 @@
 import { IndicadorModel } from "@/domain/models";
 import { CarregarCasoPais, CarregarMetricaVacina } from "@/domain/usecases";
-import { serverError } from "@/presentation/helpers";
 import { Controller, HttpResponse } from "@/presentation/protocols";
 
 export class CarregarIndicadorController implements Controller {
@@ -11,8 +10,8 @@ export class CarregarIndicadorController implements Controller {
 
     async lidar(): Promise<HttpResponse> {
         try {
-            const casoPais = await this.carregarCasoPais.carregar()
-            const metricaVacina = await this.carregarMetricaVacina.carregar()
+            const casoPais = await this.carregarCasoPais.carregar({ nomePais: 'Brazil' })
+            const metricaVacina = await this.carregarMetricaVacina.carregar({ nomePais: 'Brazil' })
 
             const indicador: IndicadorModel = {
                 pais: {
@@ -25,7 +24,7 @@ export class CarregarIndicadorController implements Controller {
             return indicador
         }
         catch (erro) {
-            return serverError(erro)
+            return erro
         }
     }
 }

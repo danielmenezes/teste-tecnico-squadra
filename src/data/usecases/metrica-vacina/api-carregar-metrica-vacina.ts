@@ -6,7 +6,7 @@ export class ApiCarregarMetricaVacina implements CarregarMetricaVacina {
         private readonly carregarMetricaVacinaRepository: CarregarMetricaVacinaRepository
     ) { }
 
-    async carregar(): Promise<CarregarMetricaVacina.Resultado> {
-        return await this.carregarMetricaVacinaRepository.carregar()
+    async carregar(parametro: CarregarMetricaVacina.Parametro): Promise<CarregarMetricaVacina.Resultado> {
+        return await this.carregarMetricaVacinaRepository.carregar(parametro);
     }
 }

@@ -5,14 +5,14 @@ import * as moment from 'moment'
 
 export class CasoPaisRepository implements CarregarCasoPaisRepository {
 
-    async carregar(): Promise<CarregarCasoPais.Resultado> {
-        const nomePais = 'Brazil'
+    async carregar({ nomePais }: CarregarCasoPais.Parametro): Promise<CarregarCasoPais.Resultado> {
+        
         const { data: dados } = await axios.get(`https://covid-api.mmediagroup.fr/v1/cases?country=${nomePais}`)
 
         const casoPais = {
             pais: {
-                nome: nomePais,
-                expectativa_vida: dados['All']['life_expectancy'],
+                nome: dados['All']['country'],
+                expectativa_vida: parseFloat(dados['All']['life_expectancy']),
                 total_casos_confirmados: dados['All']['confirmed'],
                 numero_populacao: dados['All']['population'],
                 total_obitos: dados['All']['deaths'],

@@ -6,7 +6,7 @@ export class ApiCarregarCasoPais implements CarregarCasoPais {
         private readonly carregarCasoPaisRepository: CarregarCasoPaisRepository
     ) { }
 
-    async carregar(): Promise<CarregarCasoPais.Resultado> {
-        return await this.carregarCasoPaisRepository.carregar()
+    async carregar(parametro: CarregarCasoPais.Parametro): Promise<CarregarCasoPais.Resultado> {
+        return await this.carregarCasoPaisRepository.carregar(parametro);
     }
 }
