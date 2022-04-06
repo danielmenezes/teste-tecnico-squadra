@@ -24,7 +24,7 @@
 
 ## Descrição
 
-Esse projeto é uma aplicação que consome dados referentes a casos de Covid19 e métricas de vacinação e faz um filtro com dados pertinentes ao Brasil.
+Esse projeto é uma aplicação que consome dados referentes a casos de Covid19 e métricas de vacinação e faz um filtro com dados pertinentes ao Brasil e seus Estados.
 
 URLs fonte 
 
