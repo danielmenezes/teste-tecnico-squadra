@@ -24,50 +24,39 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Esse projeto é uma aplicação que consume dados referentes a casos de Covid19 e métricas de vacinação e faz um filtro com dados pertinentes ao Brasil.
 
-## Installation
+URLs fonte: https://covid-api.mmediagroup.fr/v1/cases
+            https://covid-api.mmediagroup.fr/v1/vaccines?country=XXXXX
+
+## Instalação
 
 ```bash
 $ npm install
 ```
 
-## Running the app
+## Para rodar a aplicação
 
 ```bash
-# development
-$ npm run start
 
 # watch mode
 $ npm run start:dev
 
-# production mode
-$ npm run start:prod
 ```
 
-## Test
+## Teste
 
 ```bash
 # unit tests
 $ npm run test
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
 
-## Support
+## Como utilizar
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+Utilizando a ferramenta Insomnia ou Postman
 
-## Stay in touch
+Acesse a rota: localhost:3000/indicadores 
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Acese a documentação de uso do app utilizando o navegador pela rota: http://localhost:3000/api-docs/
 
-## License
-
-Nest is [MIT licensed](LICENSE).
