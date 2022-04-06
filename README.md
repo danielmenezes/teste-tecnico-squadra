@@ -12,7 +12,7 @@ Esse projeto é uma aplicação que consome dados referentes a casos de Covid19 
 Fontes dos dados: 
 
 https://covid-api.mmediagroup.fr/v1/cases <br>
-https://covid-api.mmediagroup.fr/v1/vaccines?country=XXXXX
+https://covid-api.mmediagroup.fr/v1/vaccines
 
 ## Instalação
 
