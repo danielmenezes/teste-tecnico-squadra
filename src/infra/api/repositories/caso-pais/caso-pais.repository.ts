@@ -1,5 +1,4 @@
 import { CarregarCasoPaisRepository } from "@/data/protocols"
-import { CasoPaisModel } from "@/domain/models"
 import { CarregarCasoPais } from "@/domain/usecases"
 import axios from 'axios'
 import * as moment from 'moment'
@@ -18,7 +17,7 @@ export class CasoPaisRepository implements CarregarCasoPaisRepository {
                 numero_populacao: dados['All']['population'],
                 total_obitos: dados['All']['deaths'],
             },
-            estados: {}
+            estados: []
         }
 
         const nomesEstados = Object.keys(dados)
@@ -36,11 +35,11 @@ export class CasoPaisRepository implements CarregarCasoPaisRepository {
                     ultima_atualizacao: dataFormadata
                 }
 
-                casoPais.estados[nome] = estado
+                casoPais.estados.push(estado)
             }
         })
     
-        return casoPais as CasoPaisModel
+        return casoPais
     }
 
 
