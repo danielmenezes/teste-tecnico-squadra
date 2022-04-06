@@ -41,7 +41,7 @@ $ npm install
 
 ```bash
 
-# watch mode
+# modo desenvolvimento
 $ npm run start:dev
 
 ```
@@ -49,7 +49,7 @@ $ npm run start:dev
 ## Testes
 
 ```bash
-# unit tests
+# testes unitários
 $ npm run test
 
 ```
