@@ -46,7 +46,7 @@ $ npm run start:dev
 
 ```
 
-## Teste
+## Testes
 
 ```bash
 # unit tests
