@@ -39,9 +39,7 @@ $ npm run test
 
 ## Como utilizar
 
-Utilizando a ferramenta Insomnia ou Postman
+Acesse aos indicadores pela rota: http://localhost:3000/indicadores 
 
-Acesse a rota: http://localhost:3000/indicadores 
-
-Acesse a documentação de uso da api utilizando o navegador pela rota: http://localhost:3000/api-docs/
+Acesse a documentação de uso da api pela rota: http://localhost:3000/api-docs/
 
