@@ -37,7 +37,7 @@ https://covid-api.mmediagroup.fr/v1/vaccines?country=XXXXX
 $ npm install
 ```
 
-## Para rodar a aplicação
+## Para iniciar a aplicação
 
 ```bash
 
