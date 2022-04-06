@@ -24,7 +24,7 @@
 
 ## Description
 
-Esse projeto é uma aplicação que consume dados referentes a casos de Covid19 e métricas de vacinação e faz um filtro com dados pertinentes ao Brasil.
+Esse projeto é uma aplicação que consome dados referentes a casos de Covid19 e métricas de vacinação e faz um filtro com dados pertinentes ao Brasil.
 
 URLs fonte: https://covid-api.mmediagroup.fr/v1/cases
             https://covid-api.mmediagroup.fr/v1/vaccines?country=XXXXX
