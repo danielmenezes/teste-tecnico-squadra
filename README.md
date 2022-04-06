@@ -22,7 +22,7 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Descrição
 
 Esse projeto é uma aplicação que consome dados referentes a casos de Covid19 e métricas de vacinação e faz um filtro com dados pertinentes ao Brasil.
 
