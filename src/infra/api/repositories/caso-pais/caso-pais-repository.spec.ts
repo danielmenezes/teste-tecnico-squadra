@@ -37,11 +37,11 @@ describe('Testes de CasoPaisRepository', () => {
         casoPais = await casoPaisRepository.carregar({ nomePais: '_' })
     })
     
-    it('CasoPaisRepository deve retornar todos os estados', () => {
+    it('CasoPaisRepository.carregar() deve retornar todos os estados', () => {
         expect(casoPais.estados.length).toBe(2)
     })
 
-    it('O retorno de CasoPaisRepository.carregar() deve conter todas as propriedades ', () => {
+    it('O retorno de CasoPaisRepository.carregar() deve conter todas as propriedades', () => {
         expect(casoPais).toMatchObject({
             pais: {
                 nome: "Nome_pais",
