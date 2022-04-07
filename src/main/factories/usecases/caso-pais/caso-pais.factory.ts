@@ -6,8 +6,8 @@ import { CARREGAR_CASO_PAIS_FACTORY } from "../../providers";
 
 export const carregarCasoPaisFactory: Provider = {
     provide: CARREGAR_CASO_PAIS_FACTORY,
-    useFactory: (CasoPaisRepository: CasoPaisRepository): CarregarCasoPaisRepository => {
-        return new ApiCarregarCasoPais(CasoPaisRepository)
+    useFactory: (casoPaisRepository: CasoPaisRepository): CarregarCasoPaisRepository => {
+        return new ApiCarregarCasoPais(casoPaisRepository)
     },
     inject: [CasoPaisRepository]
 }
